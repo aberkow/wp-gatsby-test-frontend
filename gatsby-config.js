@@ -27,6 +27,28 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-source-wordpress',
+      options: {
+        baseUrl: 'localhost',
+        protocol: 'http',
+        hostingWPCOM: false,
+        useACF: false,
+        auth: {
+          htaccess_user: "admin",
+          htaccess_pass: "admin",
+          htaccess_sendImmediately: false,
+        }
+      }
+    },
+    // {
+    //   resolve: 'gatsby-source-graphql',
+    //   options: {
+    //     typeName: 'WPGraphQL',
+    //     fieldName: 'wpcontent',
+    //     url: 'http://localhost/wordpress/graphql'
+    //   }
+    // }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
