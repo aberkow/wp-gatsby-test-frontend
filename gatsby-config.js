@@ -7,6 +7,10 @@ module.exports = {
   pathPrefix: '/wp-gatsby-test-frontend',
   plugins: [
     `gatsby-plugin-react-helmet`,
+    // use styled components for setting base theme styles
+    `gatsby-plugin-styled-components`,
+    // use postcss to allow for adding classes via the wp editor
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -42,14 +46,14 @@ module.exports = {
         }
       }
     },
-    // {
-    //   resolve: 'gatsby-source-graphql',
-    //   options: {
-    //     typeName: 'WPGraphQL',
-    //     fieldName: 'wpcontent',
-    //     url: 'http://localhost/wordpress/graphql'
-    //   }
-    // }
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'WPGraphQL',
+        fieldName: 'wpcontent',
+        url: 'http://localhost/wordpress/graphql'
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
