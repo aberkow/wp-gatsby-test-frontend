@@ -12,6 +12,19 @@ body {
   margin: 0;
 }
 
+.button-link {
+  @apply bg-uconn-red border-uconn-red border-4 border-solid text-lg uppercase text-lg;
+}
+
+/* .button-link,
+.button-link {
+  @apply bg-white text-uconn-blue;
+} */
+
+.facts-list li {
+  @apply mt-4 leading-normal text-lg;
+}
+
 .grid {
   display: grid;
   grid-gap: 16px;

@@ -6,9 +6,9 @@ import tw from 'twin.macro'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const mainStyles = tw`p-4 text-uconn-blue`
+const mainStyles = tw`py-4 text-uconn-blue`
 
-const Main = styled.main`
+const MainContent = styled.div`
   ${mainStyles}
 `
 
@@ -46,10 +46,10 @@ export default () => {
   return (
     <Layout>
       <SEO title={`UConn ${data.wordpressPage.title}`} />
-      <Main
+      <MainContent
         dangerouslySetInnerHTML={{__html: data.wordpressPage.content}}
       >
-      </Main>
+      </MainContent>
     </Layout>
   )
 }
