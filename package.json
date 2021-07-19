@@ -16,7 +16,7 @@
     "gatsby-plugin-styled-components": "^3.3.0",
     "gatsby-source-filesystem": "^2.3.0",
     "gatsby-source-graphql": "^2.5.0",
-    "gatsby-source-wordpress": "^3.3.0",
+    "gatsby-source-wordpress": "^4.0.8",
     "gatsby-transformer-sharp": "^2.5.0",
     "gh-pages": "^2.2.0",
     "postcss-apply": "^0.12.0",
